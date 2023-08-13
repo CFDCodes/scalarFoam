@@ -25,13 +25,13 @@ License
     along with OpenFOAM.  If not, see <http://www.gnu.org/licenses/>.
 
 Application
-    icoFoam
+    scalarFoam
 
 Group
     grpIncompressibleSolvers
 
 Description
-    Transient solver for incompressible, laminar flow of Newtonian fluids.
+    1st Custom Scalar Transport Transient solver for incompressible, laminar flow of Newtonian fluids.
 
     \heading Solver details
     The solver uses the PISO algorithm to solve the continuity equation:
