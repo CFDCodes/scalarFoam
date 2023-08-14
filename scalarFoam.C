@@ -155,6 +155,14 @@ int main(int argc, char *argv[])
             U.correctBoundaryConditions();
         }
 
+        fvScalarMatrix sEqn
+        (
+            fvm::ddt(s)
+            + fvm::div(div,s)
+        );
+        sEqn.relax();
+        sEqn.solve();
+
         runTime.write();
 
         runTime.printExecutionTime(Info);
